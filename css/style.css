@@ -1,0 +1,682 @@
+/* ------------Global Elements --------------- */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 65px;
+}
+
+.title h5 {
+    font-size: 15px;
+    color: #0007;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.title p {
+    font-size: 60px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 500px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.title p span {
+    color: hsl(0, 84%, 44%);
+}
+.navigate .icon1 .bar{
+    display:none;
+}
+
+
+
+
+/* ----------------Home Section------------------- */
+
+.home {
+    overflow: hidden;
+    background-color: #fff;
+}
+.navigate .container {
+    display: flex;
+    padding-block: 20px;
+    align-items:center;
+    justify-content: space-evenly;
+
+}
+
+.navigate .container ul {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.navigate .container h1 {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+}
+.navigate .container ul li {
+    padding-inline: 15px;
+    position: relative;
+}
+
+.navigate .container ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: hsl(0, 84%, 44%);
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.4s;
+    transform: translateX(-50%);
+    position: absolute;
+
+}
+
+.navigate .container ul li a:hover::after {
+    width: 100%;
+}
+
+.container h1::after {
+    content: ".";
+    color: red;
+}
+
+.navigate .container .icon1 {
+    width: 15%;
+    font-size: 30px;
+}
+
+.icon1 .iconNav {
+    text-align: left;
+}
+
+
+/* ---------------end of navigation bar -------------------------------- */
+/* -----------------home section ------------------------------------------ */
+.home .home-section {
+    background-color: #0001;
+}
+
+.home .home-section .container {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.home-section .caption {
+    width:60%;
+}
+
+.home-section .caption-img {
+    width:40%;
+    padding-block:40px;
+}
+
+.container h2{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    width: 500px;
+    color: #212529;
+}
+
+.home .home-section .container .caption p {
+    width: 400px;
+    font-size: 20px;
+    color: #0009;
+}
+
+.homeIcon {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.home-section .container .caption .homeIcon .btn1 a {
+    background-color: hsl(0, 84%, 44%);
+    border-radius: 100vh;
+    text-align: center;
+    font-size: 15px;
+    border-top-left-radius: 0 20px;
+    padding: 15px;
+    color: #fff;
+}
+
+.home .home-section .container .caption .homeIcon .btn2 {
+    color: hsl(0, 84%, 44%);
+    padding-left: 20px;
+    font-size: 35px;
+    position: relative;
+    padding-block: auto;
+}
+
+.homeIcon .btn2 a::after {
+    content: "Watch A video";
+    position: absolute;
+    color: black;
+    font-size:16px;
+    font-weight:500;;
+    width: 200px;
+    left: 65px;
+    top:10px;
+}
+
+.homeIcon .btn2 a:hover {
+    color: hsl(0, 84%, 44%);
+}
+
+
+.home .home-section .container .caption-img img {
+    width:100%;
+    display:block;
+}
+
+
+/* -------------------end of home section ------------------------------- */
+/* -----------------Chefs Section ------------------------- */
+
+.chefs .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.content .cardsHeader {
+    position: relative;
+    width:100%;
+    overflow:hidden;
+}
+
+.chefs .cardsHeader img {
+    width: 100%;
+    display: block;
+    transition: transform 500ms;
+}
+
+.chefs .cards .content {
+    box-shadow: 1px 1px 5px 1px #0005;
+    border-radius: 10px;
+    overflow: hidden;
+    width:29%;
+    margin-top:40px;
+}
+.chefs .cards .content .card{
+    display:flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.content .cardsHeader .social-cards {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: fit-content;
+    height:50%;
+    top: 70px;
+    right: 15px;
+    bottom: 40px;
+    opacity: 0;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px 1px #000;
+}
+.cards .cardsHeader:hover img{
+    transform:scale(1.5);
+}
+
+.content .cardsHeader:hover .social-cards {
+    opacity: 0.5;
+}
+
+.social-cards ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social-cards ul li {
+    padding-block: 8px;
+    padding-inline: 8px;
+}
+
+.content .cardsHeader .img-border {
+    position: absolute;
+    bottom: 0px;
+}
+
+.content .cardsBody {
+    text-align: center;
+    width:100%;
+}
+
+.chefs .content .cardsBody {
+    font-family: "Inter", sans-serif;
+    width:100%;
+}
+
+.chefs .cards .content .cardsBody h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500px;
+    margin-bottom: 4px;
+}
+
+.chefs .cards .content .cardsBody h5 {
+    color: #0007;
+    margin: 0;
+}
+
+.chefs .cards .content .cardsBody p {
+    font-style: italic;
+    color: #0007;
+}
+
+/* ---------------end of chefs section ------------------------ */
+
+/* -------------gallery section ------------------ */
+
+.gallery {
+    background-color: #0002;
+}
+
+.gallery .container .grid {
+    max-width: 1200px;
+    margin: 60px auto;
+    /* here we let the element to be in the middle */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* here are the columns we want to 3 columns  */
+    grid-auto-rows: 250px;
+    /* here are the rows so as we may have many rows it's better to make it auto but give them specific width*/
+    gap: 30px;
+}
+
+.gallery .container .grid {
+    overflow: hidden;
+}
+.container .grid div img{
+min-width: 100%;
+height: 100%;
+}
+.container .grid .mansory-box2{
+    grid-row:span 3;
+}
+.container .grid .mansory-box4{
+    grid-row:span 2;
+}
+.container .grid .mansory-box7{
+    grid-row:span 1;
+}
+
+
+/* -------------------contact section --------------- */
+iframe{
+    width: 100%;
+    height:300px;
+}
+.contact .container .icons{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    gap:20px;
+    justify-content:space-evenly;
+    align-items: center;
+    justify-content:center;
+    margin-top:30px;
+}
+.contact .container .icons .address{
+    display:flex;
+    width:43.5%;
+    padding:30px 31px;
+    background-color: #0001;
+}
+.contact .container .icons .address i{
+    font-size: 25px;
+    color:#fff;
+    position: relative;
+    z-index:1;
+}
+.contact .container .icons .address i::after
+{
+    content:"";
+    position: absolute;
+    height:60px;
+    width: 60px;
+    background-color:hsl(0, 84%, 44%);
+    top:-16px;
+    bottom:70px;
+    left:-14px;
+    right:30px;
+    border-radius:50%;
+    z-index:-1;
+}
+.contact .container .icons .address .data{
+    padding-block:auto;
+    font-family: "Inter", sans-serif;
+    padding-left: 30px;
+
+}
+
+.contact .container .icons .address .data h3{
+    margin: 0;
+    color: #0009;
+}
+
+.contact .container form{
+    box-shadow: 1px 1px 5px 1px #0005;
+    margin-block: 40px;
+}
+
+.contact .container form .form-items{
+    display:flex;
+    width:100%;
+    gap:20px;
+    padding-block:40px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact .container form .nameForm{
+    height:40px;
+    width:45%;
+    border:#0002 2px solid;
+}
+.contact .container form .subject{
+    width:92.5%;
+    height:40px;
+    border:#0002 2px solid;
+}
+textarea{
+    width:92.5%;
+    border:#0002 2px solid;
+}
+.btn3{
+    width:15%;
+    height:50px;
+    background-color:hsl(0, 84%, 44%);
+    border-radius:50px;
+    color:#fff;
+    border:#0002 2px solid;
+}
+
+
+/* -----------------end of contact -------------------------- */
+/* -------------start of footer ---------------------------- */
+
+.footer {
+    padding-top: 30px;
+    background-color: #000;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+.footer .container{
+background-color: #000;
+color:#fff;
+display:flex;
+gap:20px;
+flex-wrap: wrap;
+}
+
+.footer .container .footer-box1{
+    width:22%;
+}
+.footer .container .footer-item1{
+    display:flex;
+    gap:10px;
+}
+.footer .container .footer-img{
+    width:15%;
+}
+.footer .container .footer-item1 img{
+  width:100%;
+}
+.footer .container .footer-item1 a{
+color: #fff;
+}
+.footer .container .footer-item1 h1{
+    margin: 0;
+    padding: 0;
+    width:50%;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+}
+.footer .container .footer-item1 p{
+    width:fit-content;
+}
+.footer .footer-box1 .social-item ul{
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    font-size: 25px;
+    padding:0;
+    margin:0;
+}
+.footer .footer-box1 h3{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.footer .footer-box2{
+    width:48%;
+}
+.footer .footer-box2 h3{
+margin:0;
+padding:0;
+}
+.footer .footer-box2 .footer-item2 icons{
+    display:flex;
+}
+.footer .footer-box2 .icons input{
+    height:40px;
+    width:75%;
+}
+.footer .footer-box2 .icons button{
+    height:45px;
+    width:22%;
+    background-color:hsl(0, 84%, 44%);
+    border:none;
+    color:#fff;
+}
+.footer .footer-box2 .quickIcons h3{
+    padding-top:20px;
+}
+.footer .footer-box2 .quickIcons a{
+    color: #fff;
+}
+.footer .footer-box2 .quickIcons ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+}
+.footer-box2 .quickIcons ul li{
+width:48%;
+}
+.footer .footer-item3 h3{
+    margin:0;
+}
+
+.footer .footer-item3{
+    width:25%;
+}
+.footer .footer-boxItem a{
+    color:hsl(0, 84%, 44%);
+    font-size:25px;
+}
+.footer .footer-boxItem p{
+    margin:0;
+    padding:0;
+}
+.footer .footer-boxItem{
+    display: flex;
+    flex-wrap:nowrap;
+}
+.footer .footer-item3 .footer-boxItem{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    gap:15px;
+    padding:5px;
+}
+
+
+
+/* ------------------media query ---------------------------- */
+@media all and (max-width:575px){
+
+    .gallery .container .grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows:450px;
+    }
+    .container .icon1 .bar{
+        display:inline-block;
+    }
+     .navigate .container ul{
+        display:none;
+    }
+
+    .container .caption{
+        width:100%;
+        margin-bottom:15px;
+    }
+    .container .caption-img{
+        width:100%;
+        order:-1;
+    }
+
+    .container .cards .content{
+        width:100%;
+    }
+
+.contact .container .icons .address{
+    width:100%;
+}
+.footer .container .footer-box1{
+    width:100%;
+}
+.footer .container .footer-box2{
+    margin-block:60px;
+       width:100%;
+}
+.footer .container .footer-item3{
+    width:100%;
+}
+
+
+.contact .container form .nameForm{
+width:95%;
+}
+.contact .container form .subject{
+width:95%;
+}
+textarea{
+width:100%;
+}
+.btn3{
+width:40%;
+}
+
+
+}
+
+
+
+@media all and (min-width:576px) and (max-width:767px){
+    .container .icon1 .bar{
+        display:inline-block;
+    }
+     .navigate .container ul{
+        display:none;
+    }
+    .container .caption{
+        width:90%;
+        margin-bottom:15px;
+    }
+    .container .caption-img{
+        width:80%;
+        order:-1;
+    }
+    .contact .container .icons .address{
+        width:100%;
+    }
+    .container .cards .content{
+        width:60%;
+    }
+    .footer .container .footer-box1{
+        width:45%;
+    }
+    .footer .container .footer-box2{
+           width:45%;
+    }
+    .footer .container .footer-item3{
+        width:100%;
+    }
+    .footer .footer-box2 .icons button{
+        width:40%;
+    }
+}
+@media all and (min-width:768) and (max-width:991){
+    .container .caption{
+        width:60%;
+    }
+    .container .caption-img{
+        width:40%;
+    }
+    .container .cards .content{
+        width:80%;
+    }
+    .footer .container .footer-box1{
+        width:45%;
+    }
+    .footer .container .footer-box2{
+        margin-block:60px;
+           width:45%;
+    }
+    .footer .container .footer-item3{
+        width:100%;
+    }
+}
+@media all and (min-width:992px) and (max-width:1199px){
+    .container .caption{
+        width:50%;
+    }
+    .container .caption-img{
+        width:40%;
+    }
+    .container .cards .content{
+        width:40%;
+    }
+}
+
+@media all and (min-width:1200px){
+    .container .caption{
+        width:60%;
+    }
+    .container .caption-img{
+        width:40%;
+    }
+} 
+
